@@ -3,7 +3,7 @@
 ## Summary
 Here you will find projects that I have done and the skills that I have.
 
-## [Check it out...](https://cableredi.github.io/kcportfolio/)
+## [Check it out...](https://jess-cable.github.io/portfolio/)
 
 ## Technologies Used
 HTML, SCSS, JavaScript, jQuery
