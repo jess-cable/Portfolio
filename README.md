@@ -1,9 +1,6 @@
 # Welcome to my Portfolio
 
 ## Summary
-Here you will find projects that I have done and the skills that I have.
+Hi, my name is Jess and I'm a freelance illustrator. I specialize in science fiction and fantasy but love doing all kinds of art forms.
 
 ## [Check it out...](https://jess-cable.github.io/Portfolio/)
-
-## Technologies Used
-HTML, SCSS, JavaScript, jQuery

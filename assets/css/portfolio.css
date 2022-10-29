@@ -57,6 +57,10 @@ a {
   column-gap: 0px;
 }
 
+.main__projects-contents ul {
+  list-style: none;
+}
+
 .main__projects-contents img {
   /* Just in case there are inline attributes */
   width: 100% !important;
@@ -216,6 +220,16 @@ a {
 
 .main__contact-icons li a i:hover {
   color: #AC7088;
+}
+
+.main__contact-about {
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #1C2833;
+  text-align: center;
+  line-height: 2em;
 }
 
 footer {

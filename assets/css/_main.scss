@@ -47,6 +47,10 @@
             column-count:         5;
             column-gap:           0px;  
 
+            & ul {
+              list-style: none;
+            }
+
             & img {
                 /* Just in case there are inline attributes */
                 width: 100% !important;
@@ -188,6 +192,16 @@
             color: $accent-color;
           }
         }
+      }
+
+      &-about {
+        font-family: "Rock Salt", cursive;
+        font-size: 20px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: $font-color;
+        text-align: center;
+        line-height: 2em;
       }
     }
   }
