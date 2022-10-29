@@ -1,17 +1,4 @@
 $(document).ready(function() {
-    var folder = "./assets/images/home/";
-
-    $.ajax({
-        url : folder,
-        success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if( val.match(/\.(jpg)$/) ) {
-                    $(".main__projects-contents").append( "<img src='"+ val +"'>" );
-                } 
-            });
-        }
-    });
-
     /* Modal */
     let modal = document.getElementsByClassName("main__selectedprojects-project-modal");
     let btn = document.getElementsByClassName("main__selectedprojects-project-info");
