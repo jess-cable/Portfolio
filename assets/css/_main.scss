@@ -34,7 +34,7 @@
     margin: 30px 30px 0 30px;
   
     &__projects {
-        margin: 100px;
+        margin: 100px 10px;
 
         &-contents {
             /* Prevent vertical gaps */
@@ -77,8 +77,9 @@
   
       &-contents {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
       }
   
       &-project {
@@ -90,6 +91,7 @@
           text-align: center;
           padding: 10px;
           font-size: 12px;
+
           & img {
             margin: 10px auto 0;
             width: 230px;
@@ -151,7 +153,7 @@
               text-align: center;
               & img {
                 @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
-                width: 600px;
+                width: 80%;
               }
             }
           }
@@ -209,48 +211,10 @@
   footer {
     text-align: center;
     font-size: 12px;
-    margin: 10px;
     color: $footer-color;
     font-weight: 400;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-  }
-  
-  @media (max-width: 1200px) {
-    .main {
-        &__projects {
-            -moz-column-count:    4;
-            -webkit-column-count: 4;
-            column-count:         4;
-        }
-    }
-  }
-  @media (max-width: 1000px) {
-    .main {
-        &__projects {
-            -moz-column-count:    3;
-            -webkit-column-count: 3;
-            column-count:         3;
-        }
-    }
-  }
-  @media (max-width: 800px) {
-    .main {
-        &__projects {
-            -moz-column-count:    2;
-            -webkit-column-count: 2;
-            column-count:         2;
-        }
-    }
-  }
-  @media (max-width: 400px) {
-    .main {
-        &__projects {
-            -moz-column-count:    1;
-            -webkit-column-count: 1;
-            column-count:         1;
-        }
-    }
   }
