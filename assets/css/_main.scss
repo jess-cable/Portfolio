@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    //box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
@@ -20,12 +20,12 @@
     text-decoration: none;
     display: block;
   }
-
+  
   #page-container {
     position: relative;
     min-height: 100vh;
   }
-
+  
   #content-wrap {
     padding-bottom: 2.5rem;
   }
@@ -35,30 +35,21 @@
   
     &__projects {
         margin: 100px 10px;
-
+  
         &-contents {
-            /* Prevent vertical gaps */
-            line-height: 0;
-            
-            -webkit-column-count: 5;
-            -webkit-column-gap:   0px;
-            -moz-column-count:    5;
-            -moz-column-gap:      0px;
-            column-count:         5;
-            column-gap:           0px;  
-
-            & ul {
-              list-style: none;
-            }
-
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+  
             & img {
                 /* Just in case there are inline attributes */
-                width: 100% !important;
+                width: 250px;
                 height: auto !important;
-              }
+            }
         }
     } 
-
+  
     &__selectedprojects {
       margin-top: 60px;
       padding: 20px;
@@ -78,7 +69,7 @@
       &-contents {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
       }
   
@@ -91,10 +82,10 @@
           text-align: center;
           padding: 10px;
           font-size: 12px;
-
+  
           & img {
             margin: 10px auto 0;
-            width: 230px;
+            width: 300px;
             @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
           }
           &-name {
@@ -195,7 +186,7 @@
           }
         }
       }
-
+  
       &-about {
         font-family: "Rock Salt", cursive;
         font-size: 20px;

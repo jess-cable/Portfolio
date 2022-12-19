@@ -6,8 +6,6 @@ $background-color: #efefef;
 $footer-color: #efefef;
 */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -15,8 +13,8 @@ $footer-color: #efefef;
 body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #1C2833;
-  background-color: #F5E8C7;
+  color: #ececec;
+  background-color: #1e1e1e;
 }
 
 html {
@@ -24,7 +22,7 @@ html {
 }
 
 a {
-  color: #1C2833;
+  color: #ececec;
   text-decoration: none;
   display: block;
 }
@@ -47,30 +45,28 @@ a {
 }
 
 .main__projects-contents {
-  /* Prevent vertical gaps */
-  line-height: 0;
-  -webkit-column-count: 5;
-  -webkit-column-gap: 0px;
-  -moz-column-count: 5;
-  -moz-column-gap: 0px;
-  column-count: 5;
-  column-gap: 0px;
-}
-
-.main__projects-contents ul {
-  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__projects-contents img {
   /* Just in case there are inline attributes */
-  width: 100% !important;
+  width: 250px;
   height: auto !important;
 }
 
 .main__selectedprojects {
   margin-top: 60px;
   padding: 20px;
-  background: #F5E8C7;
+  background: #1e1e1e;
 }
 
 .main__selectedprojects h2 {
@@ -92,8 +88,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -112,7 +109,7 @@ a {
 
 .main__selectedprojects-project-info img {
   margin: 10px auto 0;
-  width: 230px;
+  width: 300px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -139,7 +136,7 @@ a {
 }
 
 .main__selectedprojects-project-modal-content {
-  background-color: #F5E8C7;
+  background-color: #1e1e1e;
   margin: 5% auto;
   padding: 10px;
   border: 1px solid #888;
@@ -148,7 +145,7 @@ a {
 }
 
 .main__selectedprojects-project-modal-content-close {
-  color: #1C2833;
+  color: #ececec;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -190,7 +187,7 @@ a {
 .main__contact {
   margin-top: 60px;
   padding: 20px;
-  background: #F5E8C7;
+  background: #1e1e1e;
 }
 
 .main__contact h2 {
@@ -229,7 +226,7 @@ a {
   font-size: 20px;
   margin-top: 30px;
   text-decoration: none;
-  color: #1C2833;
+  color: #ececec;
   text-align: center;
   line-height: 2em;
 }
@@ -246,7 +243,7 @@ footer {
 }
 
 .navbar {
-  background-color: #F5E8C7;
+  background-color: #1e1e1e;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -258,7 +255,7 @@ footer {
 }
 
 .navbar a {
-  color: #1C2833;
+  color: #ececec;
 }
 
 .navbar__menu {
@@ -284,7 +281,7 @@ footer {
   font-size: 16px;
   padding: 5px 10px;
   text-decoration: none;
-  color: #1C2833;
+  color: #ececec;
 }
 
 .navbar__menu-logo a:hover,
