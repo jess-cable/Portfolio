@@ -11,110 +11,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto%7CRock+Salt%7CCalistoga&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
-    <link href="./assets/css/portfolio.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <div id = "page-container">
-      <nav>
-        <nav class="navbar">
-          <div class="navbar__menu">
-            <div class="navbar__menu-logo">
-              <img src="./assets/images/wizard 4.png" width = "80px" height = "80px" />
-              <a href="#">Jess Cable</a>
-            </div>
-            <div class="navbar__menu-spacer"></div>
-            <div class="navbar__menu-items">
-              <div><a href="index.html">My Art</a></div>
-              <div><a href="selectedprojects.html">Selected Projects</a></div>
-              <div><a href="contact.html">About</a></div>
-            </div>
-          </div>
-        </nav>
-      </nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-items">
+          <img src="./assets/images/wizard 4.png" width = "80px" height = "80px" />
+          <a href="#">Jess Cable</a>
+        </div>
+      </div>
 
-      <div id = "content-wrap">
-        <section id="selectprojects" class="main__selectedprojects">
-          <h2>Selected Projects</h2>
-          <hr />
+      <div class="spacer"></div>
 
-          <div class="main__selectedprojects-contents">
-            <div class="main__selectedprojects-project">
-              <div class="main__selectedprojects-project-info">
-                <img src="./assets/images/Book Covers/notw cover.jpg" alt="Book Covers" />
-                <div class="main__selectedprojects-project-info-name">
-                  Book Covers
-                </div>
-              </div>
-  
-              <div class="main__selectedprojects-project-modal">
-                <div class="main__selectedprojects-project-modal-content">
-                  <span class="main__selectedprojects-project-modal-content-close">&times;</span>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Book Covers/notw cover.jpg" alt="Name of the Wind Cover" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Book Covers/sabriel cover.jpg" alt="Sabriel Cover" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Book Covers/FOTR cover.jpg" alt="Fellowship of the Ring Cover" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Book Covers/GTN cover.jpg" alt="Gideon the Ninth Cover" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="main__selectedprojects-project">
-              <div class="main__selectedprojects-project-info">
-                <img src="./assets/images/Tarot Cards/card-1.jpg" alt="Tarot Cards" />
-                <div class="main__selectedprojects-project-info-name">
-                  Tarot Cards
-                </div>
-              </div>
-  
-              <div class="main__selectedprojects-project-modal">
-                <div class="main__selectedprojects-project-modal-content">
-                  <span class="main__selectedprojects-project-modal-content-close">&times;</span>
-                  <div class="main__selectedprojects-project-modal-content-name">
-                    Tarot Cards
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-1.jpg" alt="The Fool Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-2.jpg" alt="The Magician Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-3.jpg" alt="The High Priestess Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-4.jpg" alt="The Hermit Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-5.jpg" alt="The Hanged Man Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-6.jpg" alt="Temperance Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-7.jpg" alt="Judgement Tarot Card" />
-                  </div>
-                  <div class="main__selectedprojects-project-modal-content-img">
-                    <img src="./assets/images/Tarot Cards/card-8.jpg" alt="Justice Tarot Card" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer>Jessica Cable &copy; <span id="year"></span></footer>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">My Art</a></li>
+          <li><a class="active" href="selectedprojects.html">Selected Projects</a></li>
+          <li><a href="contact.html">About</a></li>
+        </ul>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <div class="content">
+      <!-- Selected Projects -->
+      <section class="page" id="selectprojects">
+        <h2>Selected Projects</h2>
+        <hr />
+        
+        <div class="selectedprojects">
+          <!-- Book Covers -->
+          <div class="selectedproject">
+            <button class="trigger">
+              <div>
+                <img src="./assets/images/Book Covers/notw cover.jpg" alt="Book Covers" />
+              </div>
+              <div class="model-name">
+                Book Covers
+              </div>
+            </button>
+
+            <div class="modal" id="modal01">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Book Covers
+                </div>
+                <hr />
+                <div class="modal-content-img">
+                  <img src="./assets/images/Book Covers/notw cover.jpg" alt="Name of the Wind Cover" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Book Covers/sabriel cover.jpg" alt="Sabriel Cover" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Book Covers/FOTR cover.jpg" alt="Fellowship of the Ring Cover" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Book Covers/GTN cover.jpg" alt="Gideon the Ninth Cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarot Cards -->
+          <div class="selectedproject">
+            <button class="trigger">
+              <div>
+                <img src="./assets/images/Tarot Cards/card-1.jpg" alt="Tarot Cards" />
+              </div>
+              <div class="model-name">
+                Tarot Cards
+              </div>
+            </button>
+
+            <div class="modal" id="modal02">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Tarot Cards
+                </div>
+                <hr />
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-1.jpg" alt="The Fool Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-2.jpg" alt="The Magician Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-3.jpg" alt="The High Priestess Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-4.jpg" alt="The Hermit Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-5.jpg" alt="The Hanged Man Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-6.jpg" alt="Temperance Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-7.jpg" alt="Judgement Tarot Card" />
+                </div>
+                <div class="modal-content-img">
+                  <img src="./assets/images/Tarot Cards/card-8.jpg" alt="Justice Tarot Card" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">
+      Jessica Cable &copy; <span id="year"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./assets/scripts/scripts.js"></script>
   </body>
 

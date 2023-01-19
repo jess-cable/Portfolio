@@ -11,40 +11,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto%7CRock+Salt%7CCalistoga&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
-    <link href="./assets/css/portfolio.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <div id = "page-container">
-      <nav>
-        <nav class="navbar">
-          <div class="navbar__menu">
-            <div class="navbar__menu-logo">
-              <img src="./assets/images/wizard 4.png" width = "80px" height = "80px" />
-              <a href="#">Jess Cable</a>
-            </div>
-            <div class="navbar__menu-spacer"></div>
-            <div class="navbar__menu-items">
-              <div><a href="index.html">My Art</a></div>
-              <div><a href="selectedprojects.html">Selected Projects</a></div>
-              <div><a href="contact.html">About</a></div>
-            </div>
-          </div>
-        </nav>
-      </nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-items">
+          <img src="./assets/images/wizard 4.png" width = "80px" height = "80px" />
+          <a href="#">Jess Cable</a>
+        </div>
+      </div>
 
-      <div id = "content-wrap">
-        <section id = "contact" class="main__contact">
-            <h2>About</h2>
+      <div class="spacer"></div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">My Art</a></li>
+          <li><a href="selectedprojects.html">Selected Projects</a></li>
+          <li><a class="active" href="contact.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Contact -->
+      <section class="page" id="contact">
+            <h2>Contact</h2>
             <hr />
 
-            <div class='main__contact-about'>
-              <h3>Hi, my name is Jess and I'm an freelance illustrator!</h3>
+            <div class='contact-about'>
+              <h3>Hi, my name is Jess</h3>
+              <h4>I'm an freelance illustrator!</h4>
               <h4>I specialize in science fiction and fantasy but love doing all kinds of art forms.</h4>
               <h5>Check out my other works on:</h5>
             </div>
 
-            <div class="main__contact-icons">
+            <div class="contact-icons">
             <ul>
                 <li>
                   <a href="https://www.artstation.com/jesscable" target="_top">
@@ -54,12 +57,14 @@
             </ul>
             </div>
         </section>
-
-        <footer>Jessica Cable &copy; <span id="year"></span></footer>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <div class="footer">
+      Jessica Cable &copy; <span id="year"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./assets/scripts/scripts.js"></script>
   </body>
 

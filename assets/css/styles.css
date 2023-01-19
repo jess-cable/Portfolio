@@ -1,0 +1,254 @@
+:root {
+    --background-color: #1e1e1e;
+    --footer-color: #ECCCB2;
+    --border-color: #DEB6AB;
+    --accent-color: #AC7088;
+    --font-color: #ececec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    display: block;
+}
+
+button {
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+hr {
+    border-color: var(--border-color);
+    margin: 10px 0;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-family: "Calistoga", cursive;
+    letter-spacing: 0.1em;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+/* menu */
+.navbar {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: fixed;
+    overflow: hidden;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a:hover {
+    color: var(--accent-color);
+}
+
+.menu li a.active {
+    color: var(--accent-color);
+}
+
+.logo-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+/* content */
+.page h2 {
+    padding-top: 110px;
+    margin-left: 50px;
+}
+
+/* My Art */
+.myart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding: 30px 50px;
+}
+
+.myart div {
+    align-self: center;
+}
+
+.myart img {
+    margin: 10px auto 0;
+    max-width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Selected Projects */
+.selectedprojects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trigger {
+    padding: 10px;
+}
+
+.trigger .model-name {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trigger img {
+    margin: 10px auto 0;
+    width: 80%;
+    max-width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.model-name {
+    color: var(--font-color);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    padding: 15px 30px;
+    width: 80%;
+    height: 80%;
+    border-radius: 0.5rem;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.modal-content-name {
+    font-size: 50px;
+    margin: 20px 0;
+    color: var(--accent-color);
+}
+
+.modal-content hr {
+    margin-bottom: 20px;
+    height: 3px;
+    background-color: var(--border-color);
+}
+
+.modal-content-img img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: var(--background-color);
+}
+
+.close-button:hover {
+    background-color: var(--background-color);
+}
+
+/* contact */
+.contact-about {
+    font-family: "Rock Salt", cursive;
+    font-size: 20px;
+    margin: 30px 10px;
+    text-decoration: none;
+    color: var(--font-color);
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.contact-icons {
+    text-align: center;
+    font-size: 25px;
+}
+
+contact-icons li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.contact-icons li a:hover {
+    color: var(--accent-color);
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--footer-color);
+    font-weight: 400;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 100px;
+  }
+
+@media (min-width: 400px) {
+    .modal-content {
+        width: 50%;
+    }
+
+    .modal-content-img img {
+        width: 50%;
+    }
+} 
